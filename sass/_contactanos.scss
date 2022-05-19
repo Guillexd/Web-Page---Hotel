@@ -8,10 +8,10 @@
     align-items: center;
 
     h2 {
-        font-family: serif;
+        font-family: $fuenteh2;
         font-size: $mediaUno;
         margin-top: 5px;
-        color: #f12711;
+        color: $colorTitulo;
     }
 
     .contForm {
@@ -54,8 +54,7 @@
             .verde {
                 &:hover{
                     background-color: $colorUno;
-                    transform: scale(1.1);
-                    transition: all .2s ease;
+                    @include transicionUno (1.1, .2s);
                 }
                 &:active{
                     background-color: $colorUno;
@@ -74,8 +73,7 @@
             .rojo {
                 &:hover {
                     background-color: $colorDos;
-                    transform: scale(1.1);
-                    transition: all .2s ease;
+                    @include transicionUno (1.1, .2s);
                 }
                 &:active {
                     background-color: $colorDos;
@@ -94,8 +92,7 @@
             .azul {
                 &:hover {
                     background-color: $colorTres;
-                    transform: scale(1.1);
-                    transition: all .2s ease;
+                    @include transicionUno (1.1, .2s);
                 }
                 &:active {
                     background-color: $colorTres;
@@ -114,8 +111,7 @@
             .gris {
                 &:hover {
                     background-color: $colorCuatro;
-                    transform: scale(1.1);
-                    transition: all .2s ease;
+                    @include transicionUno (1.1, .2s);
                 }
                 &:active {
                     background-color: $colorCuatro;
@@ -134,8 +130,7 @@
             .amarillo {
                 &:hover {
                     background-color: $colorCinco;
-                    transform: scale(1.1);
-                    transition: all .2s ease;
+                    @include transicionUno (1.1, .2s);
                 }
                 &:active {
                     background-color: $colorCinco;
@@ -161,8 +156,7 @@
             font-weight: 700;
             background-color: rgba(127, 18, 236, 0.712);
             &:active {
-                transform: scale(1.1);
-                transition: all .1s ease;
+                @include transicionUno (1.1, .1s);
             }
         }
     }

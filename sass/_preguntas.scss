@@ -4,17 +4,18 @@
     width: 80vw;
 
     h2 {
-        font-family: serif;
+        font-family: $fuenteh2;
         font-size: $mediaUno;
         text-align: center;
-        margin-top: 5px;
-        color: #f12711;
+        color: $colorTitulo;
         }
     article{
-        h2 {
-            font-size: 16px;
-            font-weight: 600;
-            border-radius: 10%;
+        h4 {
+            @extend p;
+            font-weight: 700;
+        }
+        p{
+            font-size: $mediaUno/2.7;
         }
     }
     form {
@@ -26,7 +27,6 @@
                 border-start-end-radius: 30%;
                 border-top-left-radius: 20%;
                 border-top-right-radius: 20%;
-                
         }
 
         input {
@@ -47,8 +47,7 @@
             button{
                 color: #000000;
                 &:active{
-                    transform: scale(1.1);
-                    transition: all .1s ease;
+                    @include transicionUno (1.1, .1s);
                 }
                 &:nth-child(1) {
                         background-color: rgba(133, 51, 216, 0.692);

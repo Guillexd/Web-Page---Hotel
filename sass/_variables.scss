@@ -1,7 +1,34 @@
 //variables
+//resolución de mediaquerys
 $resolucion: 992px;
-$mediaUno: 3em;
-$medidaDos: 5em;
+//tamaño de letra
+$mediaUno: 3rem;
+$medidaDos: 8rem;
+//color de letra
+$colorTitulo: #192dd8;
+//fuente de h2
+$fuenteh2: 'Permanent Marker',
+cursive;
+//fuente y color de h3
+@mixin tipografiah3{
+    font-family: 'Shrikhand', cursive;
+    color: #0d4763;
+}
+//transiciones
+@mixin transicionUno ($ancho, $tiempo){
+    transform: scale($ancho);
+    transition: all $tiempo ease;
+}
+
+//animaciones
+$animaciones:(
+    -duration: 1s,
+    -timing-function: ease-in,
+    -delay: .1s,
+    -iteration-count: 1,
+);
+
+//colores del formulario de contactanos.html
 $colorUno: #58bb2a80;
 $colorDos: #bb2a3680;
 $colorTres: #992abb80;

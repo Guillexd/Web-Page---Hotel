@@ -14,10 +14,9 @@ body {
 iframe,
 form {
     animation-name: animar;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-delay: .1s;
-    animation-iteration-count: 1;
+    @each $var, $propi in $animaciones {
+        animation#{$var}:$propi;
+    }
 }
 
 @keyframes animar {
@@ -38,15 +37,18 @@ header {
     font-weight: 600;
     a {
         &:hover {
-            transform: scale(1.1);
-            transition: all .2s ease;
+            @include transicionUno (1.1, .2s);
         }
+    }
+
+    h1{
+        font-weight: 900;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 
     img {
         &:hover {
-            transform: scale(1.2);
-            transition: all .3s ease;
+            @include transicionUno (1.2, .3s);
         }
     }
 }
@@ -61,8 +63,7 @@ footer {
     border-top-right-radius: 10%;
     img {
         &:hover {
-            transform: scale(1.1);
-            transition: all .2s ease;
+            @include transicionUno (1.2, .3s);
         }
     }
 
@@ -70,8 +71,7 @@ footer {
         ul {
             .pie {
                 &:hover {
-                    transform: scale(1.2);
-                    transition: all .3s ease;
+                    @include transicionUno (1.2, 0.3s);
                 }
             }
         }
