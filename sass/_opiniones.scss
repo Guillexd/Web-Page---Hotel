@@ -1,0 +1,205 @@
+/* CONTENIDO PRINCIPAL OPINIONES.HTML */
+
+#opimain {
+    h2{
+        font-family: serif;
+        font-size: $mediaUno;
+        text-align: center;
+        margin-top: 5px;
+        color: #f12711;
+    }
+    #mainopi {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        .opiUno {
+            img {
+                    width: 100%;
+                    height: 15vh;
+                    border-radius: 3%;
+                    object-fit: cover;
+                    object-position: 0% 0%;
+                }
+        }
+
+        .opiDos {
+            img {
+                    width: 100%;
+                    height: 15vh;
+                    border-radius: 5%;
+                    object-fit: cover;
+                    object-position: 0% 0%;
+                }
+        }
+
+        .imagenOpiUno {
+            grid-column: 1/3;
+        }
+
+        .imagenOpiDos {
+            grid-column: 1/3;
+        }
+
+        .imagenOpiTres {
+            grid-column: 1/3;
+        }
+
+        .imagenOpiCinco {
+            grid-row: 7;
+            grid-column: 1/3;
+        }
+
+        // animación
+
+        .animacionPrimera {
+            animation-name: animandoimagenes;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-timing-function: ease;
+        }
+
+        .animacionSegunda {
+            animation-name: animandoimagenes2;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-timing-function: ease;
+        }
+
+            @keyframes animandoimagenes {
+                0% {
+                    transform: translateX(-100px);
+                }
+
+                100% {
+                    transform: translateX(0);
+                }
+            }
+
+            @keyframes animandoimagenes2 {
+                0% {
+                    transform: translateX(100px);
+                }
+
+                100% {
+                    transform: translateX(0);
+                }
+            }
+    }
+
+    form {
+        label {
+                background-color: rgba(102, 51, 153, 0.473);
+                width: 100%;
+                margin: auto;
+                border-start-start-radius: 30%;
+                border-start-end-radius: 30%;
+                border-top-left-radius: 20%;
+                border-top-right-radius: 20%;
+        }
+
+        input {
+            width: 100%;
+            margin: auto;
+        }
+
+        textarea {
+            padding: 5px 10px;
+            width: 100%;
+            height: 100px;
+            margin: auto;
+        }
+
+        #botonopi {
+            width: 100%;
+            margin: auto;
+        
+            button {
+                color: #000000;
+                &:active {
+                    transform: scale(1.1);
+                    transition: all .1s ease;
+                }
+                &:nth-child(1) {
+                    background-color: rgba(133, 51, 216, 0.692);
+                }
+        
+                &:nth-child(2) {
+                    background-color: rgba(51, 216, 166, 0.692);
+                }
+            }
+        }
+
+    }
+
+    @media screen and (min-width: $resolucion) {
+
+        h2 {
+            font-size: $medidaDos;
+        }
+
+        #mainopi {
+            grid-template-columns: 1fr 1fr 1fr;
+            .opiUno {
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 3%;
+                    object-fit: unset;
+                }
+            }
+
+            .opiDos {
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 5%;
+                    object-fit: unset;
+                }
+            }
+
+            .imagenOpiUno {
+                grid-column: 1/3;
+            }
+
+            .imagenOpiDos {
+                grid-column: 2/4;
+            }
+
+            .imagenOpiTres {
+                grid-column: 1/3;
+            }
+
+            .imagenOpiCuatro {
+                grid-column: 3;
+                grid-row: 3;
+            }
+
+            .imagenOpiCinco {
+                grid-row: 5;
+                grid-column: 2/4;
+            }
+
+        }
+
+        form {
+
+            label {
+                width: 500px;
+            }
+
+            input {
+                width: 500px;
+            }
+
+            textarea {
+                padding: 20px;
+                width: 500px;
+                height: 100px;
+            }
+
+            #botonopi {
+                width: 500px;
+            }
+        }
+    }   
+}

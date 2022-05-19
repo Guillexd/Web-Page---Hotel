@@ -1,0 +1,217 @@
+/* CONTENIDO PRINCIPAL CONTÁCTANOS.HTML */
+.fondoCont {
+    background-image: url('../imagen/tablero.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        font-family: serif;
+        font-size: $mediaUno;
+        margin-top: 5px;
+        color: #f12711;
+    }
+
+    .contForm {
+        width: 95vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #7f7f8fb7;
+        border-radius: 10%;
+        margin-bottom: 10px;
+
+        .contDivUno {
+            padding-top: 20px;
+            width: 80vw;
+            display: flex;
+            flex-direction: column;
+
+            input {
+                padding: 10px 30px;
+                font-size: 20px;
+                border-bottom-left-radius: 20%;
+                border-top-right-radius: 10%;
+            }
+        }
+
+        .contDivDos {
+            display: flex;
+            flex-direction: column;
+            font-size: 20px;
+
+            #individual {
+
+                &:checked~.verde{
+                    
+                            background-color: $colorCheck;
+                        
+                }
+            }
+
+            .verde {
+                &:hover{
+                    background-color: $colorUno;
+                    transform: scale(1.1);
+                    transition: all .2s ease;
+                }
+                &:active{
+                    background-color: $colorUno;
+                }
+            }
+            
+            #matrimonial {
+
+                &:checked~.rojo {
+                
+                        background-color: $colorCheck;
+                
+                }
+            }
+
+            .rojo {
+                &:hover {
+                    background-color: $colorDos;
+                    transform: scale(1.1);
+                    transition: all .2s ease;
+                }
+                &:active {
+                    background-color: $colorDos;
+                }
+            }
+            
+            #doble {
+
+                &:checked~.azul {
+                
+                        background-color: $colorCheck;
+                
+                }
+            }
+
+            .azul {
+                &:hover {
+                    background-color: $colorTres;
+                    transform: scale(1.1);
+                    transition: all .2s ease;
+                }
+                &:active {
+                    background-color: $colorTres;
+                }
+            }
+            
+            #familiar {
+
+                &:checked~.gris {
+                
+                        background-color: $colorCheck;
+                
+                }
+            }
+
+            .gris {
+                &:hover {
+                    background-color: $colorCuatro;
+                    transform: scale(1.1);
+                    transition: all .2s ease;
+                }
+                &:active {
+                    background-color: $colorCuatro;
+                }
+            }
+            
+            #compartida {
+
+                &:checked~.amarillo {
+                
+                        background-color: $colorCheck;
+                
+                }
+            }
+
+            .amarillo {
+                &:hover {
+                    background-color: $colorCinco;
+                    transform: scale(1.1);
+                    transition: all .2s ease;
+                }
+                &:active {
+                    background-color: $colorCinco;
+                }
+            }
+        } 
+
+        .contDivTres {
+            display: flex;
+            justify-content: center;
+
+            textarea {
+                font-size: 20px;
+                width: 80%;
+                height: 40vh;
+                border-radius: 5%;
+                padding: 20px;
+            }
+        }
+
+        button {
+            color: #000000;
+            font-weight: 700;
+            background-color: rgba(127, 18, 236, 0.712);
+            &:active {
+                transform: scale(1.1);
+                transition: all .1s ease;
+            }
+        }
+    }
+
+        @media screen and (min-width: $resolucion){
+            h2 {
+                font-size: $medidaDos;
+            }
+            
+                .contForm {
+                    width: 40vw;
+            
+                    .contDivUno {
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        width: 90%;
+                        justify-content: space-evenly;
+                        padding-top: 40px;
+
+                        .correo {
+                                width: 86%;
+                        }
+            
+                        input {
+                            border-bottom-left-radius: 0;
+                            border-top-right-radius: 0;
+                            width: 40%;
+                            padding: 15px;
+                        }
+                    }
+            
+                    .contDivDos {
+                        display: flex;
+                        flex-direction: column;
+                        font-size: 20px;
+            
+                        label{
+                            font-size: 25px;
+                        }
+                    }
+
+                    .contDivTres {
+                        textarea {
+                            width: 95%;
+                                height: 30vh;
+                        }
+                    }
+                }   
+        }
+}
+
+

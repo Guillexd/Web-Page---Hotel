@@ -9,7 +9,7 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/estilos-css.css">
+    <link rel="stylesheet" href="css/estilos.css">
 
     <!-- ANIMATION -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -23,7 +23,7 @@
 </head>
 <body>
     <header class="sticky-lg-top">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="--bs-bg-opacity: .25;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-info">
 
             <div class="container-fluid">
 
@@ -82,13 +82,13 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="imagen/habitacion1.jpg" class="d-block w-100" alt="habitación simple">
+                        <img src="imagen/habitacion1.jpg" id="imgUno" class="d-block w-100" alt="habitación simple">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Habitación Simple</h5>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="imagen/habitacion3.jpg" class="d-block w-100" alt="habitación doble">
+                        <img src="imagen/habitacion3.jpg"class="d-block w-100" alt="habitación doble">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Habitación Matrimonial</h5>
                         </div>
@@ -100,7 +100,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="imagen/habitacion4.jpg" class="d-block w-100" alt="habitación compartida">
+                        <img src="imagen/habitacion4.jpg" id="imgCuatro" class="d-block w-100" alt="habitación compartida">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Habitación Compartida</h5>
                         </div>
@@ -210,10 +210,8 @@
     </main>
 
     <!-- PIE DE PÁGINAS -->
-    <div class="bg-light redondeo" style="--bs-bg-opacity: .5;">
-        <br>
-    </div>
-    <footer class="bg-light" style="--bs-bg-opacity: .5;">
+
+    <footer class="bg-light">
 
         <section class="container">
             <div class="row d-flex flex-wrap align-items-center py-3 border-top">
@@ -239,12 +237,17 @@
 
         <section id="footersectionDos">
             <div class="d-flex justify-content-center">
-                <div class="d-lg-flex">
-                    <p><img class="pe-3" src="imagen/logocellphone.png" alt="telefono">01-23-45-67-89</p>
-                    <p><img class="pe-3" src="imagen/logogmail.png" alt="correo">enriquejunior@gmail.com
-                    </p>
-                    <p><img class="pe-3" src="imagen/logomaps.png" alt="dirección">Av.Narnia 1234567</p>
-                </div>
+                <section class="d-lg-flex pb-2  ">
+                    <div>
+                        <img class="pe-3" src="imagen/logocellphone.png" alt="telefono">01-23-45-67-89
+                    </div>
+                    <div>
+                        <img class="pe-3" src="imagen/logogmail.png" alt="correo">enriquejunior@gmail.com
+                    </div>
+                    <div>
+                        <img class="pe-3" src="imagen/logomaps.png" alt="dirección">Av.Narnia 1234567
+                    </div>
+                </section>
             </div>
         </section>
 

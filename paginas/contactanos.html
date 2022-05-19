@@ -10,7 +10,7 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/estilos-css.css">
+    <link rel="stylesheet" href="../css/estilos.css">
 
     <!-- ANIMATION -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -25,7 +25,7 @@
 
 <body>
     <header class="sticky-lg-top">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="--bs-bg-opacity: .25;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-info">
 
             <div class="container-fluid">
 
@@ -86,31 +86,31 @@
     
             <!-- SEGUNDO DIV -->
             <div class="contDivDos">
-                <input id="individual" type="checkbox">
+                <input id="individual" class="d-none" type="checkbox">
                 <div class="my-2 verde">
                     <label class="w-100 px-5 py-2" for="individual">Individual</label>
                 </div>
     
     
-                <input id="matrimonial" type="checkbox">
+                <input id="matrimonial" class="d-none" type="checkbox">
                 <div class="text-center mb-2 rojo">
                     <label class="w-100 px-5 py-2" for="matrimonial">Matrimonial</label>
                 </div>
     
     
-                <input id="doble" type="checkbox">
+                <input id="doble" class="d-none" type="checkbox">
                 <div class="mb-2 azul">
                     <label class="w-100 px-5 py-2" for="doble">Familiar</label>
                 </div>
     
     
-                <input id="familiar" type="checkbox">
+                <input id="familiar" class="d-none" type="checkbox">
                 <div class="mb-2 gris">
                     <label class="w-100 px-5 py-2" for="familiar">Compartida</label>
                 </div>
     
     
-                <input id="compartida" type="checkbox">
+                <input id="compartida" class="d-none" type="checkbox">
                 <div class="mb-2 amarillo">
                     <label class="w-100 px-5 py-2" for="compartida">Suit</label>
                 </div>
@@ -123,15 +123,13 @@
             </div>
     
             <!-- INPUT -->
-            <button type="button" class="btn btn-primary btn-lg my-3 bg-dark" style="--bs-bg-opacity:.75">Enviar solicitud</button>
+            <button type="button" class="btn btn-lg my-3">Enviar solicitud</button>
         </form>
     </main>
 
     <!-- PIE DE PÁGINAS -->
-    <div class="bg-light redondeo" style="--bs-bg-opacity: .5;">
-        <br>
-    </div>
-    <footer class="bg-light" style="--bs-bg-opacity: .5;">
+
+    <footer class="bg-light">
 
         <section class="container">
             <div class="row d-flex flex-wrap align-items-center py-3 border-top">
@@ -164,12 +162,17 @@
 
         <section id="footersectionDos">
             <div class="d-flex justify-content-center">
-                <div class="d-lg-flex">
-                    <p><img class="pe-3" src="../imagen/logocellphone.png" alt="telefono">01-23-45-67-89</p>
-                    <p><img class="pe-3" src="../imagen/logogmail.png" alt="correo">enriquejunior@gmail.com
-                    </p>
-                    <p><img class="pe-3" src="../imagen/logomaps.png" alt="dirección">Av.Narnia 1234567</p>
-                </div>
+                <section class="d-lg-flex pb-2  ">
+                    <div>
+                        <img class="pe-3" src="../imagen/logocellphone.png" alt="telefono">01-23-45-67-89
+                    </div>
+                    <div>
+                        <img class="pe-3" src="../imagen/logogmail.png" alt="correo">enriquejunior@gmail.com
+                    </div>
+                    <div>
+                        <img class="pe-3" src="../imagen/logomaps.png" alt="dirección">Av.Narnia 1234567
+                    </div>
+                </section>
             </div>
         </section>
 

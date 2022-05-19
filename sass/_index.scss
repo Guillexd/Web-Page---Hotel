@@ -1,0 +1,75 @@
+
+/* CONTENIDO PRINCIPAL DE INDEX.HTML */
+
+        /* configurando slider */
+#imagenesSlider {
+    img{
+        height: 60vh;
+        object-fit: cover;
+    }
+
+    #imgUno{
+        object-fit: unset;
+    }
+
+    #imgCuatro{
+        object-position: left;
+    }
+
+    h5{
+        font-size: $mediaUno;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: rgb(129, 199, 178);
+    }
+
+         @media screen and (min-width: $resolucion){         
+            img{
+                object-fit: unset;
+            }
+         }
+}
+
+        /* ajustando video, imágenes y h2 */
+#segundoSection {
+    h2{
+        font-family: serif;
+        font-size: 3em;
+        text-align: center;
+        margin-top: 5px;
+        color: #f12711;
+    }
+
+    iframe, p{
+        border-radius: 10%;
+        width: 100%;
+    }
+
+        @media screen and (min-width: $resolucion){
+            iframe, p{
+                width: 45%;
+            }
+            h2{
+                font-family: serif;
+                font-size: $medidaDos;
+            }
+        }
+}
+
+
+/* ajustando imagen y texto */
+#tercerSection {
+    img{
+        width: 90%;
+        border-radius: 20%;
+        margin: auto;
+        height: 40vh;
+    }
+        @media screen and (min-width: $resolucion) {
+            img{
+                width: 45%;
+            }
+            div{
+                width: 45%;
+            }
+        }
+}
