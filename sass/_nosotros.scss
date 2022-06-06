@@ -40,6 +40,12 @@
             grid-area: contenido3;
             border-bottom: solid 1px black;
             padding-bottom: 30px;
+            @media screen and (min-width: $resolucion) and (max-width: 1200px){
+                img{
+                    transform: translateX(-40px);
+                }
+            }
+            
         }
 
         aside{

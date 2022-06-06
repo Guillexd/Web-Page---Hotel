@@ -19,16 +19,16 @@
         div{
             border-radius: 10%;
             background-color: rgba(193, 243, 250, 0.493);
+            width: 18rem;
             img{
                 border-top-left-radius: 10%;
                 border-top-right-radius: 10%;
             }
             div{
-                border-top-left-radius: 0%;
-                border-top-right-radius: 0%;
+                
                 border-bottom-left-radius: 12%;
                 border-bottom-right-radius: 12%;
-                h5{
+                h4{
                     font-weight: 600;
                     font-size: $mediaUno/2;
                 }

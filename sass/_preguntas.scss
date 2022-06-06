@@ -2,7 +2,6 @@
 /* modificando h2 */
 #premain {
     width: 80vw;
-
     h2 {
         font-family: $fuenteh2;
         font-size: $mediaUno;
@@ -10,7 +9,7 @@
         color: $colorTitulo;
         }
     article{
-        h4 {
+        h3 {
             @extend p;
             font-weight: 700;
         }
@@ -62,8 +61,7 @@
 
         @media screen and (min-width: $resolucion){
 
-            width: 50vw;
-
+            width: 60vw;
             h2{
                 font-size: $medidaDos;
             }
