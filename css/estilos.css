@@ -120,7 +120,7 @@ footer {
     width: 45%; } }
 
 /* CONTENIDO PRINCIPAL INFORMACION.HTML */
-/* ajustando video e imágenes */
+/* ajustando video e imágenes y aplicando pseudoclases*/
 #infomain h2 {
   font-family: "Permanent Marker", cursive;
   font-size: 3rem;
@@ -170,7 +170,7 @@ footer {
   height: 40%; }
 
 /* CONTENIDO PRINCIPAL NOSOTROS.HTML  */
-/* modificando h2 */
+/* modificando h2, imagenes y aplicando grid*/
 #nosmain {
   display: grid;
   grid-template-areas: "titulo" "contenido1" "contenido2" "contenido3" "aside"; }
@@ -292,6 +292,7 @@ footer {
         width: 500px; } }
 
 /* CONTENIDO PRINCIPAL OPINIONES.HTML */
+/*modificando h2,h3 y aplicando grilas*/
 #opimain h2 {
   font-family: "Permanent Marker", cursive;
   font-size: 3rem;

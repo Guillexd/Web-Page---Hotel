@@ -21,7 +21,7 @@
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         color: rgb(145, 255, 222);
     }
-
+        // MEDIA QUERY
          @media screen and (min-width: $resolucion){         
             img{
                 object-fit: unset;
@@ -46,7 +46,7 @@
         border-radius: 10%;
         width: 100%;
     }
-
+        // MEDIA QUERY
         @media screen and (min-width: $resolucion){
             iframe, p{
                 width: 45%;
@@ -71,6 +71,7 @@
         margin: auto;
         height: 40vh;
     }
+        // MEDIA QUERY
         @media screen and (min-width: $resolucion) {
             img{
                 width: 45%;

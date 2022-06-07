@@ -17,6 +17,7 @@
             font-size: $mediaUno/2.7;
         }
     }
+    // FORMULARIO
     form {
         label {
                 background-color: rgba(102, 51, 153, 0.473);
@@ -58,7 +59,7 @@
 
         }
     }
-
+        // MEDIA QUERY EN FORMULARIO
         @media screen and (min-width: $resolucion){
 
             width: 60vw;

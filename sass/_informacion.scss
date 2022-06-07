@@ -1,6 +1,6 @@
 /* CONTENIDO PRINCIPAL INFORMACION.HTML */
 
-/* ajustando video e imágenes */
+/* ajustando video e imágenes y aplicando pseudoclases*/
 #infomain {
     h2{
         font-family: $fuenteh2;
@@ -14,7 +14,7 @@
         font-size: $medidaDos/2.5;
     }
 
-
+    //SEGUNDO SECTION
     section{
         div{
             border-radius: 10%;
@@ -50,6 +50,7 @@
             }
         }
     }
+        // MEDIA QUERY
         @media screen and (min-width: $resolucion){
             h2{
                 font-size: $medidaDos;

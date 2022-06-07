@@ -1,5 +1,5 @@
 /* CONTENIDO PRINCIPAL NOSOTROS.HTML  */
-/* modificando h2 */
+/* modificando h2, imagenes y aplicando grid*/
 #nosmain {
     display: grid;
         grid-template-areas:
@@ -51,6 +51,7 @@
                     height: 35vh;
                 }
         }
+                // MEDIA QUERY
                 @media screen and (min-width: $resolucion){
                     grid-template-areas:
                             "titulo titulo"
