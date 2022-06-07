@@ -34,6 +34,7 @@ form {
 /*transiciones*/
 header {
     font-weight: 600;
+    text-align: center;
     a {
         &:hover {
             @include transicionUno (1.1, .2s);

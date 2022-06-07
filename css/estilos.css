@@ -27,7 +27,8 @@ form {
 /*HEADER DE LAS PÁGINAS*/
 /*transiciones*/
 header {
-  font-weight: 600; }
+  font-weight: 600;
+  text-align: center; }
   header a:hover {
     transform: scale(1.1);
     transition: all 0.2s ease; }
@@ -185,7 +186,7 @@ footer {
   #nosmain h3 {
     font-family: 'Shrikhand', cursive;
     color: #0d4763;
-    font-size: 3.2rem; }
+    font-size: 2.66667rem; }
   #nosmain .empSectUno {
     grid-area: contenido1; }
   #nosmain .empSectDos {
@@ -194,9 +195,6 @@ footer {
     grid-area: contenido3;
     border-bottom: solid 1px black;
     padding-bottom: 30px; }
-    @media screen and (min-width: 992px) and (max-width: 1200px) {
-      #nosmain .empSectTres img {
-        transform: translateX(-40px); } }
   #nosmain aside {
     grid-area: aside; }
     #nosmain aside img {
@@ -315,12 +313,6 @@ footer {
     border-radius: 3%;
     object-fit: cover;
     object-position: 0% 0%; }
-  #opimain #mainopi .opiDos img {
-    width: 100%;
-    height: 15vh;
-    border-radius: 5%;
-    object-fit: cover;
-    object-position: 0% 0%; }
   #opimain #mainopi .imagenOpiUno {
     grid-column: 1/3; }
   #opimain #mainopi .imagenOpiDos {
@@ -394,13 +386,8 @@ footer {
     grid-template-columns: 1fr 1fr 1fr; }
     #opimain #mainopi .opiUno img {
       width: 100%;
-      height: 100%;
+      height: 25vh;
       border-radius: 3%;
-      object-fit: unset; }
-    #opimain #mainopi .opiDos img {
-      width: 100%;
-      height: 100%;
-      border-radius: 5%;
       object-fit: unset; }
     #opimain #mainopi .imagenOpiUno {
       grid-column: 1/3; }
